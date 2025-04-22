@@ -1,1 +1,17 @@
-document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelectorAll("details");e.forEach(t=>{t.addEventListener("toggle",()=>{t.open&&e.forEach(e=>{e!==t&&(e.open=!1)})})});
+document.getElementById("toggle-mode").onclick=()=>document.body.classList.toggle("dark");
+
+// document.addEventListener("DOMContentLoaded", () => {
+//     const detailsElements = document.querySelectorAll("details");
+
+//     detailsElements.forEach(details => {
+//         details.addEventListener("toggle", () => {
+//             if (details.open) {
+//                 detailsElements.forEach(otherDetails => {
+//                     if (otherDetails !== details) {
+//                         otherDetails.open = false;
+//                     }
+//                 });
+//             }
+//         });
+//     });
+// });
